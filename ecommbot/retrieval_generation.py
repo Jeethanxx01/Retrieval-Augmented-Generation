@@ -1,9 +1,12 @@
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from ecommbot.ingest import ingestdata
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def generation(vstore):
     retriever = vstore.as_retriever(search_kwargs={"k": 3})
@@ -23,10 +26,18 @@ def generation(vstore):
     
     """
 
-
     prompt = ChatPromptTemplate.from_template(PRODUCT_BOT_TEMPLATE)
 
-    llm = ChatOpenAI()
+    api_key = os.getenv("GOOGLE_API_KEY")
+    if not api_key:
+        raise ValueError("GOOGLE_API_KEY environment variable is not set")
+
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-2.0-flash",
+        google_api_key=api_key,
+        temperature=0.7,
+        max_output_tokens=2048
+    )
 
     chain = (
         {"context": retriever, "question": RunnablePassthrough()}

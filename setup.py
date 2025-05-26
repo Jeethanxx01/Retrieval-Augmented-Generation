@@ -6,5 +6,5 @@ setup(
     author="sunny",
     author_email="sunny.savita@ineuron.ai",
     packages=find_packages(),
-    install_requires=['langchain-astradb','langchain ','langchain-openai','datasets','pypdf','python-dotenv','flask']
+    install_requires=['langchain-astradb','langchain','google-generativeai','langchain-google-genai','datasets','pypdf','python-dotenv','flask']
 )
