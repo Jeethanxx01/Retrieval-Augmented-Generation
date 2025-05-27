@@ -1,4 +1,4 @@
-# 🛍️ Ecommerce Chatbot
+# 🛍️ Retrieval-Augmented Generation Ecommerce Chatbot
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0%2B-lightgrey)](https://flask.palletsprojects.com/)
@@ -9,42 +9,30 @@
 - [View Project Images](Images/)
 - [OpenAI Version of the Project](OpenAI_version/)
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/your-username/ecommerce-chatbot/main/docs/images/chat-interface.png" alt="Chat Interface" width="600"/>
-</div>
-
 ## 🚀 Overview
 
-The Ecommerce Chatbot is an enterprise-grade AI solution designed to revolutionize online shopping experiences. Built on Python and Flask framework, this sophisticated chatbot leverages advanced natural language processing (NLP) techniques to deliver intelligent, context-aware responses and personalized product recommendations. By seamlessly integrating with the e-commerce platform's product database, it provides real-time information on product availability, pricing, and shipping details, while maintaining a natural conversational flow that enhances customer engagement and satisfaction.
+AI-powered E-commerce Chatbot application leveraging Retrieval-Augmented Generation architecture that combines  
+LLM capabilities to enable context-aware product recommendations and semantic search from real time vector Database.
+Built with Python, Flask, Google's Gemini API, and DataStax Astra DB, and deployed on AWS EC2, this project marks a
+revolution in e-commerce product recommendation domain.
 
 ## ✨ Key Features
 
 ### 🤖 Intelligent Conversational Interface
-- Real-time, context-aware chat interactions
+- Real-time  chat interactions
 - Natural language understanding and processing
-- Multi-turn conversation management
 
 ### 🎯 Advanced Product Intelligence
 - AI-powered product recommendation engine
-- Personalized suggestions based on user behavior
 - Dynamic pricing and availability updates
 
 ### 🔄 Seamless Database Integration
 - Real-time product catalog synchronization
-- Efficient data retrieval and caching
-- Secure and scalable data management
-
-### 💬 Comprehensive Customer Support
-- Instant response to product inquiries
-- Order tracking and status updates
-- Shipping and delivery information
-- Return and refund assistance
+- Efficient data retrieval  and scalable data management
 
 ### 🏢 Enterprise-Grade Architecture
 - High-performance request handling
 - Scalable cloud infrastructure
-- Secure data transmission
-- Continuous availability
 
 ## 🛠️ Installation
 
@@ -130,28 +118,21 @@ The Ecommerce Chatbot is an enterprise-grade AI solution designed to revolutioni
    ASTRA_DB_KEYSPACE=your_keyspace
    ```
 
-## 📊 System Architecture
-
-### User Interface
-<div align="center">
-  <img src="https://raw.githubusercontent.com/your-username/ecommerce-chatbot/main/docs/images/chat-interface.png" alt="Chat Interface" width="400"/>
-  <img src="https://raw.githubusercontent.com/your-username/ecommerce-chatbot/main/docs/images/dashboard.png" alt="Dashboard" width="400"/>
-</div>
-
-### Database Architecture
-<div align="center">
-  <img src="https://raw.githubusercontent.com/your-username/ecommerce-chatbot/main/docs/images/db-schema.png" alt="Database Schema" width="400"/>
-  <img src="https://raw.githubusercontent.com/your-username/ecommerce-chatbot/main/docs/images/data-flow.png" alt="Data Flow" width="400"/>
-</div>
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 👥 Authors
+
+- **Jeethan Joel Crasta**-  [GitHub](https://github.com/Jeethanxx01)
+
 ## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Contact
-
-For any queries or support, please reach out to [your-email@example.com](mailto:your-email@example.com)
